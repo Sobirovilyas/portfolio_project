@@ -4,7 +4,8 @@
     <h1>My Personal Blog</h1>
     <hr>
     {% for post in posts %}
-    <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
+    <div> class = "blog_frame">
+             <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
     <small>
         {{ post.post_date }} |&nbsp;
         Categories:&nbsp;
@@ -15,6 +16,8 @@
         {% endfor %}
     </small>
     <p>{{ post.body | slice:":400" }}...</p>
+    </div>
+
     {% endfor %}
 </div>
 {% endblock %}
