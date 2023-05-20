@@ -1,0 +1,19 @@
+
+img {
+    width: 100%;
+    height: auto;
+    transition: transform .2s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+}
